@@ -1,9 +1,18 @@
-# Data Ingestion Project (Local Version)
+# Data Ingestion Pipeline (Local Version)
 
-## Description
-This script accepts a URL, downloads a file, validates its format and size, simulates uploading it to S3, and logs the action.
+This is a simple script that:
+- Takes a file URL (e.g., CSV)
+- Downloads and validates the file
+- Simulates uploading to AWS S3
+- Logs the action locally in `upload_log.json`
 
-## How to Run
+## Technologies
+- Python
+- requests
+- json
+- datetime
+
+## Usage
 
 ```bash
 python3 ingest.py
